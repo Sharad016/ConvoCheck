@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Discussion Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>💬 AI Discussion Assistant</h1>
+
+  <textarea id="threadInput" placeholder="Enter discussion text (one comment per line)..."></textarea><br>
+  <button onclick="analyze()">Analyze</button>
+
+  <h2>Gemini Analysis</h2>
+  <pre id="summary"></pre>
+
+  <h2>Flagged Comments</h2>
+  <div id="flaggedComments"></div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
