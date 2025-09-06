@@ -36,10 +36,12 @@ button:hover {
 }
 
 #summary {
-  background: #fff;
+  background: #00000056;
   padding: 10px;
   border: 1px solid #ddd;
   white-space: pre-wrap;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
 }
 
 #flaggedComments p {
