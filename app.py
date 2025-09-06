@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, jsonify
 import google.generativeai as genai
 from better_profanity import profanity
 app = Flask(__name__)
-genai.configure(api_key="AIzaSyCUCgSpUBZ--e-Nilrc5-k3jlDqOlkXMTY")
+genai.configure(api_key="Your-API-Key")
 profanity.load_censor_words()
 
 @app.route("/")
