@@ -26,7 +26,7 @@ async function analyze() {
       p.style.color = "red";     // toxic → red
       p.style.fontWeight = "bold";
     } else {
-      p.style.color = "green";   // safe → green
+      p.style.color = "black";   // safe → black
     }
     flaggedDiv.appendChild(p);
   });
