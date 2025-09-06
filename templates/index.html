@@ -6,18 +6,27 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1 class = "typing">ConvoCheck ...</h1>
-  <h2>An AI powered chat summarizing Bot</h2>
+  <div class="top" style="text-align: right;">
+    <img src="{{ url_for('static', filename='logo-removebg-preview.png') }}" alt="ConvoCheck Logo" class="logo">
+  </div>
+
+  <h1 class="toptext">An AI powered chat summarizing Bot</h1>
+
+  <marquee behavior="" direction="right to left">Paste the chat here and summarize it and analyze the threads .</marquee>
 
   <textarea id="threadInput" placeholder="Enter discussion text (one comment per line)..."></textarea><br>
-  <button onclick="analyze()">Analyze</button>
+  <button onclick="analyze()">Analyze Thread</button>
 
-  <h2 style="text-decoration: underline;">Chat Analysis</h2>
+  <h2 class="ca" style="text-decoration: underline;">Chat Analysis</h2>
+  
   <pre id="summary"></pre>
 
-  <h2 style="text-decoration: underline;" >Flagged Comments</h2>
+  <h2 class="ca" style="text-decoration: underline;" >Flagged Comments</h2>
   <div id="flaggedComments"></div>
 
   <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+  <footer><p class="a">Can You Hack It: </p><h3>Alpha Next</h3></footer>
+
 </body>
 </html>
